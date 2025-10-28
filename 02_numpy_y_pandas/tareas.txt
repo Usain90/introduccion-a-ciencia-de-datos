@@ -1,0 +1,45 @@
+**Tarea 1 – Exploración y manipulación básica**
+
+Objetivo: practicar lectura, inspección y filtrado de datos con Pandas.
+
+Cargá el archivo titanic.csv en un DataFrame llamado df.
+
+Mostrá:
+
+cantidad de filas y columnas,
+
+tipos de datos (.dtypes),
+
+valores faltantes por columna (.isna().sum()).
+
+Filtrá:
+
+todos los pasajeros de primera clase,
+
+que sean mujeres,
+
+y tengan edad menor a 30.
+Mostrá sólo las columnas Name, Age, Fare y Survived.
+
+Calculá el promedio y la mediana de Fare y Age para ese subconjunto.
+
+Guardá ese subconjunto en un nuevo archivo titanic_mujeres1ra.csv.
+
+
+
+** Tarea 2: Gráficos y conclusiones rápidas **
+
+Objetivo: aplicar Matplotlib y operaciones de agrupamiento para sacar insights.
+Instrucciones para los alumnos:
+
+Usando el mismo DataFrame, creá una nueva columna AgeBin con grupos de edad:
+0-12, 13-18, 19-30, 31-45, 46-60, 60+.
+(Pueden usar pd.cut.)
+
+Calculá la tasa de supervivencia promedio (mean()) por cada grupo de AgeBin.
+
+Mostrá los resultados en una gráfica de barras (.plot(kind='bar')).
+
+Agregá título, etiquetas y ajustá los ejes.
+
+Escribí en un comentario una conclusión de una línea (por ejemplo: “los niños tuvieron mayor tasa de supervivencia que los adultos”).
